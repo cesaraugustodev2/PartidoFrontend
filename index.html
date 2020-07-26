@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css"> <!--Boostrap personalizado-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>Partido Frontend</title>
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark " >
+        <a class="navbar-brand " href="#">Partido Frontend</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header> <!--Fim do Navbar -->
+<main id="home">
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1 class="text-center text-white">Partido Frontend</h1>
+
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Quero me afiliar</button>
+        </div>
+    </div>
+    <section>
+        <div class="container text-center">
+            <h2 class="text-center text-primary"> Valores do nosso partido</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> <i class="fas fa-award fa-2x text-primary"></i> Honestidade</h5>
+                            <p class="card-text">Opte sempre pela honestidade: só ela garante uma consciência limpa e noites de sono tranquilas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> <i class="fa fa-child fa-2x text-primary"></i> Liberdade </h5>
+                            <p class="card-text">Fuja das correntes que o deixam preso à impossibilidade de voar para onde quiser!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">  <i class="fas fa-hands-helping fa-2x text-primary "> </i>Cooperação</h5>
+                            <p class="card-text">A cooperação é a convicção plena de que ninguém pode chegar à meta se não chegarem todos..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">   <i class="far fa-smile-beam fa-2x text-primary "> </i> Empatia</h5>
+                            <p class="card-text"> Para entender e ajudar o próximo é necessário se imaginar na condição dele.
+
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+
+                    <div class="container align-content-center">
+                        <img class="img-fluid " src="assets/img/notebook_compressed.png" width="600" height="400" alt="Imagem de um notebook com o editor de códigos aberto">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 align-content-center">
+                    <h1 class="text-center text-primary"> Formulário de afiliação</h1>
+                    <p class="text-primary text-center"> Deseja fazer parte de nosso partido?, preencha o formulário e entraremos em contato em breve</p>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+
+                                <input id="name" name="name" placeholder="Digite seu primeiro nome" type="text" aria-describedby="nameHelpBlock" required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="lastname" name="lastname" placeholder="Digite seu sobrenome" type="text" aria-describedby="lastnameHelpBlock" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+
+                                <input id="email" name="email" placeholder="Digite seu e-mail" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" cols="40" rows="5" aria-describedby="messageHelpBlock" class="form-control"></textarea>
+                            <span id="messageHelpBlock" class="form-text text-muted">Fale um pouco sobre você</span>
+                        </div>
+                        <div class="form-group">
+                            <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container text-center">
+            <h2 class="text-center text-primary"> Nossas redes sociais</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> <i class="fab fa-facebook-messenger fa-2x text-primary"></i> <br>Facebook</h5>
+                            <span class="btn btn-primary"> Acessar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> <i class="fab fa-whatsapp fa-2x text-primary"></i> <br> Whatsapp </h5>
+                            <span class="btn btn-primary"> Acessar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">  <i class="fab fa-telegram fa-2x text-primary "> </i> <br> Telegram</h5>
+                            <span class="btn btn-primary"> Acessar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">   <i class="fab fa-twitter fa-2x text-primary "> </i><br> Twitter</h5>
+
+                            <span class="btn btn-primary"> Acessar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center text-white bg-dark align-content-center">
+        <div class="container">
+        </div>
+        <div class="container">
+            <p class="text-center">&copy; Todos os direitos reservados - 2020.</p>
+        </div>
+        </div>
+
+    </footer>
+
+</main>
+
+
+<body>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</html>
