@@ -7,6 +7,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 @media print {
     *,
     *::before,
@@ -471,12 +472,12 @@ mark,
 }
 .img-thumbnail {
     padding: 0.25rem;
-    background-color: #000000;
+    background-color: #e8830a;
     border: 1px solid #ddd;
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
-    max-width: 100%;
-    height: auto;
+    height: 300px;
+    width:100%;
 }
 .figure {
     display: inline-block;
@@ -3497,7 +3498,11 @@ tbody.collapse.show {
     padding-right: 0;
     padding-left: 0;
     border-radius: 0;
-    background-image: linear-gradient( 109.6deg,  rgba(119,44,232,0.68) 11.5%, rgba(119,44,232,1) 91.2% );
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 .alert {
     padding: 0.75rem 1.25rem;
@@ -7137,7 +7142,6 @@ a.text-dark:hover {
     background-color: #212529;
     color: #fff;
 }
-footer {
-    min-height: 5vh;
-    background-image: linear-gradient( 109.6deg,  rgba(119,44,232,0.68) 11.5%, rgba(119,44,232,1) 91.2% );
+.text-custom {
+    font-family: 'Josefin Sans', sans-serif;
 }

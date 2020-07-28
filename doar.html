@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css"> <!--Boostrap personalizado-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>Partido Frontend</title>
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark " >
+        <a class="navbar-brand " href="#"><img src="assets/img/ic_launcher.png"></img> Partido Frontend</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Conheça o Partido <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header> <!--Fim do Navbar -->
+<main id="doar">
+    <div class="jumbotron jumbotron-fluid text-center">
+        <img src="assets/img/ic_launcher_big.png"></img><h1 class="text-center text-white">Partido Frontend</h1>
+
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Quero me afiliar</button>
+        </div>
+    </div>
+    <section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+
+                        <div class="container align-content-center">
+                            <img class="img-fluid " src="assets/img/doar.png" width="600" height="400" alt="Imagem de um notebook com o editor de códigos aberto">
+                        </div>
+                    </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2 class="text-center text-primary">
+                                Deseja contruibir conosco?
+                            </h2>
+
+                            <form action="doar.php" class="form text-center" name="doar">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-check-input" value="" placeholder="Digite seu nome" required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-check-input" value="" placeholder="Digite seu email" required="true">
+                                </div>
+                                <h4 class="text-primary text-center"> Como deseja doar?</h4>
+                                <div class="form-check form-check-inline">
+
+                                    <input type="radio" id="cc" name="tipo" value="cartao" class="" required="true">
+                                    <label for="cc" class="text-primary">Cartão de credito</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="boleto" name="tipo" value="boleto"class="" required="true">
+                                    <label for="boleto" class="text-primary">Boleto Bancário</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Continuar</button>
+                                </div>
+                            </form>
+                            <div class="container py-3"> <!-- Botão transferencia bancária -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#transferencia">
+                               <i class="fas fa-money-check-alt"></i> Doar via transferencia bancária
+                            </button>
+                            </div>
+                                    <div class="col-sm-12 col-md-12 text-center py-2">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bitcoin">
+                                            <i class="fab fa-bitcoin"></i> Doar Bitcoin
+                                        </button>
+                                    </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 align-content-center">
+
+        </div>
+    </div>
+</div>
+        <!-- Modal  Transferencia-->
+        <div class="modal fade" id="transferencia" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="transferencia">Dados Bancários</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Faça a transferencia para a nossa conta abaixo</p>
+                        <p><b> Favorecido</b>: Partido Frontend S.A</p>
+                        <p><b> Banco</b>: Itaú Unibanco Holding S.A</p>
+                        <p><b> Agencia</b>: 2125</p>
+                        <p><b> Conta</b>: 12345-x</p>
+                    </div>
+                    <div class="modal-footer">
+                       <span class=" btn btn-primary text-center "> Copiar </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal  bitcoin-->
+        <div class="modal fade" id="bitcoin" tabindex="-1" role="dialog" aria-labelledby="Doar Bitcoins" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="transferencia">Doar Bitcoins</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Segue nosso endereço blockchain</p>
+                        <b>1​woukheyeacxfpxtpkxjqxureevdkbywj​</b>
+                    </div>
+                    <div class="modal-footer">
+                        <span class=" btn btn-primary text-center "> Copiar </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</html>

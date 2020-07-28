@@ -17,6 +17,8 @@
 <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark  bg-dark " >
+        <img src="assets/img/ic_launcher.png"></img>
+
         <a class="navbar-brand " href="#">Partido Frontend</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Conheça o Partido <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="#">Doar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
+                    <a class="nav-link" href="#">Contato</a>
                 </li>
             </ul>
         </div>
@@ -38,13 +40,14 @@
 </header> <!--Fim do Navbar -->
 <main id="home">
     <div class="jumbotron jumbotron-fluid text-center">
-        <h1 class="text-center text-white">Partido Frontend</h1>
+        <img src="assets/img/ic_launcher_big.png"></img><h1 class="text-center text-white">Partido Frontend</h1>
 
         <div class="container">
             <button type="button" class="btn btn-primary btn-lg">Quero me afiliar</button>
+            <button type="button" class="btn btn-success btn-lg text-white">Quero doar</button>
         </div>
     </div>
-    <section>
+    <section id="valores">
         <div class="container text-center">
             <h2 class="text-center text-primary"> Valores do nosso partido</h2>
             <div class="row">
@@ -86,7 +89,7 @@
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5" id="afiliacao">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
@@ -128,9 +131,99 @@
                 </div>
             </div>
         </div>
-
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-primary text-center"> Conheça a equipe</h1>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-4">
+                <div class="card-group">
+                <div class="card ">
+                    <h3 class="card-header bg-dark text-center text-white">
+                      Steve Jobs
+                    </h3>
+                    <h5 class="card-header text-center text-primary ">
+                       <i class="fa fa-star"></i> Presidente
+                    </h5>
+                    <div class="card-body card-img">
+                        <p class="card-text">
+                            <img src="assets/img/jobs.webp" class="img-fluid img-thumbnail mx-auto  card-img-top"  alt="">
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-custom"><i class="fa fa-graduation-cap"></i> Reed College</li>
+                            <li class="list-group-item text-custom"><i class="fa fa-briefcase"></i> <b>Apple inc.</b></li>
+                            <li class="list-group-item text-custom"><i class="fa fa-cog"></i> Mente criativa</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center  text-white bg-success">
+                        <h5 class="text-white">Contatos</h5>
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card ">
+                    <h3 class="card-header bg-dark text-center text-white">
+                        Bill Gates
+                    </h3>
+                    <h5 class="card-header text-center text-primary">
+                        <i class="fa fa-star"></i> 1º Secretário
+                    </h5>
+                    <div class="card-body card-img">
+                        <p class="card-text">
+                            <img src="assets/img/bill.webp" class="img-fluid img-thumbnail  mx-auto  card-img-top" width="180" height="250" alt="">
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item  text-custom"><i class="fa fa-graduation-cap"></i> Harvard</li>
+                            <li class="list-group-item text-custom"><i class="fa fa-briefcase"></i> <b>Microsoft</b></li>
+                            <li class="list-group-item text-custom"><i class="fa fa-cog"></i> Genio Financeiro</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center  text-white bg-success">
+                        <h5 class="text-white">Contatos</h5>
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card ">
+                    <h3 class="card-header bg-dark text-center text-white">
+                        Ken Thompson
+                    </h3>
+                    <h5 class="card-header text-center text-primary">
+                        <i class="fa fa-star"></i> 2º Secretário
+                    </h5>
+                    <div class="card-body card-img">
+                        <p class="card-text">
+                            <img src="assets/img/ken.jpg" class="img-fluid img-thumbnail mx-auto"  alt="">
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-custom"><i class="fa fa-graduation-cap"></i> Universidade da California</li>
+                            <li class="list-group-item text-custom "><i class="fa fa-briefcase"></i> <b>Google</b></li>
+                            <li class="list-group-item text-custom"><i class="fa fa-cog"></i> Mestre da Programação</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center  text-white bg-success">
+                        <h5 class="text-white">Contatos</h5>
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </section>
-    <section>
+    <section id="social">
         <div class="container text-center">
             <h2 class="text-center text-primary"> Nossas redes sociais</h2>
             <div class="row">
@@ -171,20 +264,8 @@
         </div>
     </section>
 
-    <footer class="footer text-center text-white bg-dark align-content-center">
-        <div class="container">
-        </div>
-        <div class="container">
-            <p class="text-center">&copy; Todos os direitos reservados - 2020.</p>
-        </div>
-        </div>
-
-    </footer>
-
 </main>
 
-
-<body>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
