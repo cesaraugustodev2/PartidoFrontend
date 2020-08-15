@@ -7145,3 +7145,9 @@ a.text-dark:hover {
 .text-custom {
     font-family: 'Josefin Sans', sans-serif;
 }
+.filter {
+    filter: grayscale(80%);
+}
+.filter:hover {
+    filter: grayscale(0%);
+}
